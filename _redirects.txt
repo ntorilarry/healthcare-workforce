@@ -1,0 +1,3 @@
+/auth/login
+/dashboard1
+/dashboard2

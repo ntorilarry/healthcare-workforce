@@ -1,0 +1,29 @@
+import { MdOutlineDashboardCustomize } from "react-icons/md";
+import { RiDashboardHorizontalLine } from "react-icons/ri";
+import { RxDashboard } from "react-icons/rx";
+
+export const navigation = [
+  {
+    name: "Dashboards",
+    href: "/dashboard",
+    icon: RxDashboard,
+    subItems: [
+      {
+        name: "Dashboard1",
+        href: "/dashboard1",
+        icon: MdOutlineDashboardCustomize,
+      },
+      {
+        name: "Dashboard2",
+        href: "/dashboard2",
+        icon: RiDashboardHorizontalLine,
+      },
+    ],
+  },
+
+  // {
+  //   name: "Users",
+  //   href: "/list-user/page=1",
+  //   icon: FiUsers,
+  // },
+];

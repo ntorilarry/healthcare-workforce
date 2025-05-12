@@ -16,17 +16,18 @@ import {
   FaExclamationCircle,
 } from "react-icons/fa";
 import { FiActivity } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const ViewStaff = () => {
   const [selectedTab, setSelectedTab] = useState("employment");
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border-b border-neutral-300 bg-white px-4 sm:gap-8 lg:px-6">
-        <a href="/staff" className="flex items-center gap-2">
+      <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border-b border-neutral-200 bg-white px-4 sm:gap-8 lg:px-6">
+        <Link to="/staff/list" className="flex items-center gap-2">
           <FaChevronLeft className="h-4 w-4" />
           <span>Back to Staff List</span>
-        </a>
+        </Link>
         <div className="ml-auto flex items-center gap-2">
           <button className="flex items-center gap-2 rounded-md border border-neutral-400 px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-50">
             <FaDownload className="h-4 w-4" />
@@ -79,8 +80,8 @@ const ViewStaff = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="rounded-lg border border-neutral-300 bg-white">
-            <div className="border-b border-neutral-300 p-4">
+          <div className="rounded-lg border border-neutral-200 bg-white">
+            <div className="border-b border-neutral-200 p-4">
               <h2 className="text-lg font-semibold">Contact Information</h2>
             </div>
             <div className="p-4">
@@ -150,8 +151,8 @@ const ViewStaff = () => {
             <TabPanels className="mt-6">
               {/* Employment History Tab */}
               <TabPanel>
-                <div className="rounded-lg border border-neutral-300 bg-white">
-                  <div className="border-b border-neutral-300 p-4">
+                <div className="rounded-lg border border-neutral-200 bg-white">
+                  <div className="border-b border-neutral-200 p-4">
                     <h2 className="text-lg font-semibold">
                       Employment History
                     </h2>
@@ -230,8 +231,8 @@ const ViewStaff = () => {
 
               {/* Certifications Tab */}
               <TabPanel>
-                <div className="rounded-lg border border-neutral-300 bg-white">
-                  <div className="border-b border-neutral-300 p-4">
+                <div className="rounded-lg border border-neutral-200 bg-white">
+                  <div className="border-b border-neutral-200 p-4">
                     <h2 className="text-lg font-semibold">
                       Certifications & Licenses
                     </h2>
@@ -240,7 +241,7 @@ const ViewStaff = () => {
                     </p>
                   </div>
                   <div className="p-4 space-y-6">
-                    <div className="rounded-lg border border-neutral-300 p-4">
+                    <div className="rounded-lg border border-neutral-200 p-4">
                       <div className="flex items-start justify-between">
                         <div>
                           <h3 className="font-semibold">Medical License</h3>
@@ -280,7 +281,7 @@ const ViewStaff = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-lg  border border-neutral-300 p-4">
+                    <div className="rounded-lg  border border-neutral-200 p-4">
                       <div className="flex items-start justify-between">
                         <div>
                           <h3 className="font-semibold">
@@ -322,7 +323,7 @@ const ViewStaff = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-lg border border-neutral-300 p-4">
+                    <div className="rounded-lg border border-neutral-200 p-4">
                       <div className="flex items-start justify-between">
                         <div>
                           <h3 className="font-semibold">
@@ -369,8 +370,8 @@ const ViewStaff = () => {
 
               {/* Pension & Retirement Tab */}
               <TabPanel>
-                <div className="rounded-lg border border-neutral-300 bg-white">
-                  <div className="border-b border-neutral-300 p-4">
+                <div className="rounded-lg border border-neutral-200 bg-white">
+                  <div className="border-b border-neutral-200 p-4">
                     <h2 className="text-lg font-semibold">
                       Pension & Retirement Details
                     </h2>
@@ -475,15 +476,15 @@ const ViewStaff = () => {
 
               {/* Documents Tab */}
               <TabPanel>
-                <div className="rounded-lg border border-neutral-300 bg-white">
-                  <div className="border-b border-neutral-300 p-4">
+                <div className="rounded-lg border border-neutral-200 bg-white">
+                  <div className="border-b border-neutral-200 p-4">
                     <h2 className="text-lg font-semibold">Documents</h2>
                     <p className="text-sm text-gray-500">
                       Personal and professional documents
                     </p>
                   </div>
                   <div className="p-4 space-y-4">
-                    <div className="rounded-lg border border-neutral-300 p-4">
+                    <div className="rounded-lg border border-neutral-200 p-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
                           <FaFileAlt className="h-8 w-8 text-blue-500" />
@@ -500,7 +501,7 @@ const ViewStaff = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-lg border border-neutral-300 p-4">
+                    <div className="rounded-lg border border-neutral-200 p-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
                           <FaFileAlt className="h-8 w-8 text-blue-500" />
@@ -519,7 +520,7 @@ const ViewStaff = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-lg border border-neutral-300 p-4">
+                    <div className="rounded-lg border border-neutral-200 p-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
                           <FaFileAlt className="h-8 w-8 text-blue-500" />
@@ -538,7 +539,7 @@ const ViewStaff = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-lg border border-neutral-300 p-4">
+                    <div className="rounded-lg border border-neutral-200 p-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
                           <FaFileAlt className="h-8 w-8 text-blue-500" />
@@ -568,21 +569,21 @@ const ViewStaff = () => {
           </TabGroup>
 
           {/* Action Panel */}
-          <div className="rounded-lg border border-neutral-300 bg-white">
-            <div className="border-b border-neutral-300 p-4">
+          <div className="rounded-lg border border-neutral-200 bg-white">
+            <div className="border-b border-neutral-200 p-4">
               <h2 className="text-lg font-semibold">Action Panel</h2>
             </div>
             <div className="p-4">
               <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-5">
-                <button className="flex flex-col items-center gap-1 rounded-md border border-neutral-300 p-4 transition-colors hover:bg-gray-50">
+                <button className="flex flex-col items-center gap-1 rounded-md border border-neutral-200 p-4 transition-colors hover:bg-gray-50">
                   <FaAward className="h-5 w-5" />
                   <span className="text-sm">Promote</span>
                 </button>
-                <button className="flex flex-col items-center gap-1 rounded-md border border-neutral-300 p-4 transition-colors hover:bg-gray-50">
+                <button className="flex flex-col items-center gap-1 rounded-md border border-neutral-200 p-4 transition-colors hover:bg-gray-50">
                   <FaBuilding className="h-5 w-5" />
                   <span className="text-sm">Transfer</span>
                 </button>
-                <button className="flex flex-col items-center gap-1 rounded-md border border-neutral-300 p-4 transition-colors hover:bg-gray-50">
+                <button className="flex flex-col items-center gap-1 rounded-md border border-neutral-200 p-4 transition-colors hover:bg-gray-50">
                   <FaExclamationCircle className="h-5 w-5" />
                   <span className="text-sm">Flag</span>
                 </button>

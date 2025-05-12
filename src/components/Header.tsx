@@ -61,7 +61,7 @@ const Header = ({ setSidebarOpen }) => {
         <div className="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
           {/* <SearchTable /> */}
 
-          <div className="flex-1 hidden max-w-xs m-auto sm:block">
+          <div className="flex-1 hidden  max-w-xs m-auto sm:block">
             <label htmlFor="" className="sr-only">
               {" "}
               Search{" "}
@@ -78,7 +78,7 @@ const Header = ({ setSidebarOpen }) => {
                 type="search"
                 name="search"
                 onChange={handleSearchChange}
-                className="block w-full py-2 pl-10 border dark:text-gray-300 dark:bg-neutral-800 border-gray-300 dark:border-neutral-600 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
+                className="block w-full py-2 pl-10 border bg-white  rounded-3xl dark:text-gray-300 dark:bg-neutral-800 border-gray-300 dark:border-neutral-600 focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
                 placeholder="Type to search"
               />
             </div>

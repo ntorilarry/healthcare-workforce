@@ -70,7 +70,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                     className={classNames(
                                       isActive
                                         ? "bg-white text-black"
-                                        : "text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700",
+                                        : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
                                       "flex items-center gap-x-3 rounded-lg p-2 mt-1 text-sm"
                                     )}
                                   >
@@ -89,7 +89,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                         className={classNames(
                           location.pathname.startsWith(item.href.split("?")[0])
                             ? "bg-white text-black"
-                            : "text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700",
+                            : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
                           "group flex justify-between mt-1 items-center w-full rounded-lg p-3 text-sm font-medium"
                         )}
                       >
@@ -157,7 +157,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                   className={classNames(
                                     isActive
                                       ? "bg-white text-black"
-                                      : "text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700",
+                                      : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
                                     "flex items-center gap-x-3 rounded-xl p-2 mt-1 text-sm"
                                   )}
                                 >
@@ -176,7 +176,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                       className={classNames(
                         location.pathname.startsWith(item.href.split("?")[0])
                           ? "bg-white text-black"
-                          : "text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700",
+                          : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
                         "group flex justify-between items-center mt-1 w-full rounded-xl p-2 text-sm font-medium"
                       )}
                     >

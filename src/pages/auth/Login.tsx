@@ -44,26 +44,7 @@ const Login = () => {
                       name=""
                       id=""
                       placeholder="Username"
-                      className="
-                                        block
-                                        w-full
-                                        py-4
-                                        pl-12
-                                        pr-4
-                                        overflow-hidden
-                                        text-base
-                                        font-normal
-                                        text-gray-900
-                                        placeholder-gray-600
-                                        transition-all
-                                        duration-200
-                                        border border-gray-300
-                                        caret-gray-900
-                                        rounded-xl
-                                        bg-gray-50
-                                        focus:outline-none focus:bg-white focus:border-gray-900 focus:ring-gray-900
-                                        font-pj
-                                    "
+                      className="block w-full py-4 pl-12 pr-4 overflow-hidden text-base font-normal text-gray-900 placeholder-gray-600 transition-all duration-200 border border-gray-300 caret-gray-900 rounded-xl bg-gray-50 focus:outline-none focus:bg-white focus:border-gray-900 focus:ring-gray-900"
                     />
                   </div>
                 </div>

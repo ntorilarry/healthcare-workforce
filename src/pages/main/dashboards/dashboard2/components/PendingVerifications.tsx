@@ -1,7 +1,6 @@
 import { FiAlertTriangle, FiCheckCircle, FiPlus } from "react-icons/fi";
-import DataTable, {
-  type DataTableColumn,
-} from "../../../../components/DataTableBody";
+import type { DataTableColumn } from "../../../../../components/DataTable";
+import DataTable from "../../../../../components/DataTable";
 
 interface VerificationItem {
   id: string;
@@ -111,7 +110,7 @@ const PendingVerifications = () => {
       columns={columns}
       title="Pending Verifications"
       description="Staff certifications requiring verification"
-      actionButton={actionButton}
+      headerAction={actionButton}
     />
   );
 };

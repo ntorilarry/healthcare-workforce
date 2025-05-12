@@ -24,7 +24,7 @@ export const navigation = [
 
   {
     name: "Staff Management",
-    href: "/staff-management",
+    href: "/staff/list",
     icon: FiUsers,
   },
 ];

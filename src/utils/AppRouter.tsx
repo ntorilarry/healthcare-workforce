@@ -1,9 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Login from "../pages/auth/Login";
 import MainLayout from "../shared/MainLayout";
-import Dashboard2 from "../pages/main/dashboard2/Dashboard2";
-import { Dashboard } from "../pages/main/dashboard/Dashboard";
-import Staff from "../pages/main/staff/Staff";
+import Staff from "../pages/main/staffManagement/staff/Staff";
+import { Dashboard } from "../pages/main/dashboards/dashboard/Dashboard";
+import Dashboard2 from "../pages/main/dashboards/dashboard2/Dashboard2";
+import CreateStaff from "../pages/main/staffManagement/createStaff/CreateStaff";
+import ViewStaff from "../pages/main/staffManagement/viewStaff/ViewStaff";
 
 const AppRouter = () => {
   return (
@@ -17,8 +19,15 @@ const AppRouter = () => {
         <Route index element={<Navigate replace to="/dashboard1" />} />
         <Route path="dashboard1" element={<Dashboard />} />
         <Route path="dashboard2" element={<Dashboard2 />} />
-        <Route path="staff-management" element={<Staff />} />
+
+        <Route path="staff">
+          <Route index element={<Navigate replace to="list" />} />
+          <Route path="list" element={<Staff />} />
+          <Route path="create" element={<CreateStaff />} />
+          <Route path="view" element={<ViewStaff />} />
+        </Route>
       </Route>
+
       {/* <Route path="/*" element={<PageNotFound />} /> */}
     </Routes>
   );

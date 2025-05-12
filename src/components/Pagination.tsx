@@ -15,6 +15,9 @@ const Pagination: React.FC<PaginationProps> = ({
   return (
     <div className="flex items-center justify-between py-4">
       <div className="text-sm text-gray-500">Showing 4 of 3,248 staff</div>
+      <div onClick={() => onPageChange(currentPage)}>
+        {currentPage} {totalPages}
+      </div>
       <div className="flex items-center gap-2">
         <button
           className="flex items-center justify-center p-2 rounded-md border border-gray-300 text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"

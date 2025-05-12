@@ -1,3 +1,4 @@
+import { FiUsers } from "react-icons/fi";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { RiDashboardHorizontalLine } from "react-icons/ri";
 import { RxDashboard } from "react-icons/rx";
@@ -21,9 +22,9 @@ export const navigation = [
     ],
   },
 
-  // {
-  //   name: "Users",
-  //   href: "/list-user/page=1",
-  //   icon: FiUsers,
-  // },
+  {
+    name: "Staff Management",
+    href: "/staff-management",
+    icon: FiUsers,
+  },
 ];

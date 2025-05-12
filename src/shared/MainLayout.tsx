@@ -13,7 +13,7 @@ const MainLayout = () => {
         <div className="sticky top-0 z-40">
           <Header setSidebarOpen={setSidebarOpen} />
         </div>
-        <main className="py-10 dark:bg-neutral-800 bg-white my-5 mr-5 rounded-4xl">
+        <main className="py-10 dark:bg-neutral-800 bg-white my-5 mx-5 lg:mr-5 lg:ml-0 rounded-4xl">
           <div className="px-4 sm:px-6 lg:px-8 rounded-4xl">
             <Outlet />
           </div>

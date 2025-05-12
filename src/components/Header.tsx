@@ -42,7 +42,7 @@ const Header = ({ setSidebarOpen }) => {
 
   return (
     <div>
-      <div className="sticky top-0 z-40 flex shrink-0 items-center py-4 gap-x-4 bg-blue-50 dark:bg-neutral-900 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
+      <div className="sticky top-0 z-40 flex shrink-0 items-center rounded-b-3xl  py-4 gap-x-4 bg-blue-50 dark:bg-neutral-900 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
         <button
           type="button"
           className="-m-2.5 p-2.5 text-gray-700 dark:text-white lg:hidden"
@@ -78,7 +78,7 @@ const Header = ({ setSidebarOpen }) => {
                 type="search"
                 name="search"
                 onChange={handleSearchChange}
-                className="block w-full py-2 pl-10 border bg-white  rounded-3xl dark:text-gray-300 dark:bg-neutral-800 border-gray-300 dark:border-neutral-600 focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
+                className="block w-full py-2 pl-10 bg-white rounded-3xl dark:text-gray-300 dark:bg-neutral-800 border-gray-300 dark:border-neutral-600 focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
                 placeholder="Type to search"
               />
             </div>

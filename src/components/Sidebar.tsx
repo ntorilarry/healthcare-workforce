@@ -32,7 +32,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             </button>
 
             <nav className="mt-6 flex flex-1 flex-col px-4">
-              <ul role="list" className="flex flex-1 flex-col gap-y-2">
+              <ul role="list" className="flex flex-1 flex-col gap-y-1">
                 {navigation.map((item) => (
                   <li key={item.name}>
                     {item.subItems ? (
@@ -41,7 +41,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                           <>
                             <DisclosureButton
                               className={classNames(
-                                "group flex justify-between items-center w-full rounded-lg p-3 text-sm font-medium text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700"
+                                "group flex justify-between items-center w-full rounded-lg py-2 px-3  text-sm font-medium text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700"
                               )}
                             >
                               <div className="flex gap-x-3 items-center">
@@ -71,7 +71,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                       isActive
                                         ? "bg-white text-black"
                                         : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
-                                      "flex items-center gap-x-3 rounded-lg p-2 mt-1 text-sm"
+                                      "flex items-center gap-x-3 rounded-2xl py-2 px-3  mt-1 text-sm"
                                     )}
                                   >
                                     <subItem.icon className="h-4 w-4" />
@@ -90,7 +90,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                           location.pathname.startsWith(item.href.split("?")[0])
                             ? "bg-white text-black"
                             : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
-                          "group flex justify-between mt-1 items-center w-full rounded-lg p-3 text-sm font-medium"
+                          "group flex justify-between mt-1 items-center w-full rounded-2xl py-2 px-3 text-sm font-medium"
                         )}
                       >
                         <div className="flex gap-x-3 items-center">
@@ -119,7 +119,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
           </div>
 
           <nav className="mt-6 flex flex-1 flex-col">
-            <ul role="list" className="flex flex-1 flex-col gap-y-2">
+            <ul role="list" className="flex flex-1 flex-col gap-y-1">
               {navigation.map((item) => (
                 <li key={item.name}>
                   {item.subItems ? (
@@ -128,7 +128,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                         <>
                           <DisclosureButton
                             className={classNames(
-                              "group flex justify-between items-center w-full rounded-lg p-2 text-sm font-medium text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700"
+                              "group flex justify-between items-center w-full rounded-xl py-2 px-3 text-sm font-medium text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700"
                             )}
                           >
                             <div className="flex gap-x-3 items-center">
@@ -158,7 +158,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                     isActive
                                       ? "bg-white text-black"
                                       : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
-                                    "flex items-center gap-x-3 rounded-xl p-2 mt-1 text-sm"
+                                    "flex items-center gap-x-3 rounded-2xl py-2 px-3 mt-1 text-sm"
                                   )}
                                 >
                                   <subItem.icon className="h-4 w-4" />
@@ -177,7 +177,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                         location.pathname.startsWith(item.href.split("?")[0])
                           ? "bg-white text-black"
                           : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
-                        "group flex justify-between items-center mt-1 w-full rounded-xl p-2 text-sm font-medium"
+                        "group flex justify-between items-center mt-1 w-full rounded-2xl py-2 px-3 text-sm font-medium"
                       )}
                     >
                       <div className="flex gap-x-3 items-center">

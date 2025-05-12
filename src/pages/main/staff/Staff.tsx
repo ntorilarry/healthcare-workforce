@@ -1,5 +1,7 @@
-import type { DataTableColumn } from "../../../../components/DataTableBody";
-import DataTable from "../../../../components/DataTableBody";
+import { FiPlus } from "react-icons/fi";
+import type { DataTableColumn } from "../../../components/DataTableBody";
+import DataTable from "../../../components/DataTableBody";
+
 
 interface CertificateItem {
   id: string;
@@ -10,7 +12,7 @@ interface CertificateItem {
   status: string;
 }
 
-const CertificationsExpiring = () => {
+const Staff = () => {
   const tableData: CertificateItem[] = [
     {
       id: "1",
@@ -78,7 +80,7 @@ const CertificationsExpiring = () => {
       header: "Actions",
       accessor: "id",
       render: () => (
-        <div className="flex justify-end gap-2">
+        <div className="flex ">
           <button className="rounded-md px-2 py-1 text-sm text-gray-500 hover:bg-gray-100">
             Notify
           </button>
@@ -87,19 +89,25 @@ const CertificationsExpiring = () => {
     },
   ];
 
+    const actionButton = (
+      <button className="flex items-center gap-2 text-sm bg-neutral-800 text-white rounded-md px-3 py-1.5 hover:bg-neutral-900">
+        <FiPlus className="h-3.5 w-3.5" />
+      Add Staff
+      </button>
+    );
+
   return (
-    <div>
+    <div className="rounded-lg border border-gray-200 bg-white">
       {" "}
-      <div className="rounded-lg border border-gray-200 bg-white">
-        <DataTable
-          data={tableData}
-          columns={columns}
-          title="Certifications Expiring Soon"
-          description="Staff with certifications expiring in the next 30 days"
-        />
-      </div>
+      <DataTable
+        data={tableData}
+        columns={columns}
+        title="Staff List"
+        description="Manage and view all healthcare workers"
+        actionButton={actionButton}
+      />
     </div>
   );
 };
 
-export default CertificationsExpiring;
+export default Staff;

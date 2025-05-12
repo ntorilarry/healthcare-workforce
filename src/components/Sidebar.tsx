@@ -69,7 +69,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                     to={subItem.href}
                                     className={classNames(
                                       isActive
-                                        ? "bg-neutral-200 text-black"
+                                        ? "bg-white text-black"
                                         : "text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700",
                                       "flex items-center gap-x-3 rounded-lg p-2 mt-1 text-sm"
                                     )}
@@ -88,7 +88,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                         to={item.href}
                         className={classNames(
                           location.pathname.startsWith(item.href.split("?")[0])
-                            ? "bg-neutral-200 text-black"
+                            ? "bg-white text-black"
                             : "text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700",
                           "group flex justify-between mt-1 items-center w-full rounded-lg p-3 text-sm font-medium"
                         )}
@@ -109,10 +109,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
 
       {/* Desktop Sidebar */}
       <div className="hidden lg:fixed lg:inset-y-0 lg:z-30 lg:flex lg:flex-col lg:w-[250px]">
-        <div className="flex grow flex-col overflow-y-auto bg-white border border-r border-neutral-200 dark:border-neutral-700 dark:bg-neutral-800 px-4 pb-4">
+        <div className="flex grow flex-col overflow-y-auto bg-blue-50 border-neutral-200 dark:bg-neutral-900 px-4 pb-4">
           <div className="flex items-center justify-between pt-6 shrink-0">
-            <a href="/" className="flex  items-center">
-              <p className="text-neutral-800 dark:text-white font-semibold text-lg ">
+            <a href="/" className="flex px-2 items-center">
+              <p className="text-neutral-800 dark:text-white font-semibold text-base ">
                 Healthcare Workforce
               </p>
             </a>
@@ -156,9 +156,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                   to={subItem.href}
                                   className={classNames(
                                     isActive
-                                      ? "bg-neutral-200 text-black"
+                                      ? "bg-white text-black"
                                       : "text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700",
-                                    "flex items-center gap-x-3 rounded-lg p-2 mt-1 text-sm"
+                                    "flex items-center gap-x-3 rounded-xl p-2 mt-1 text-sm"
                                   )}
                                 >
                                   <subItem.icon className="h-4 w-4" />
@@ -175,9 +175,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                       to={item.href}
                       className={classNames(
                         location.pathname.startsWith(item.href.split("?")[0])
-                          ? "bg-neutral-200 text-black"
+                          ? "bg-white text-black"
                           : "text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700",
-                        "group flex justify-between items-center mt-1 w-full rounded-lg p-2 text-sm font-medium"
+                        "group flex justify-between items-center mt-1 w-full rounded-xl p-2 text-sm font-medium"
                       )}
                     >
                       <div className="flex gap-x-3 items-center">

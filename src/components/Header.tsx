@@ -42,7 +42,7 @@ const Header = ({ setSidebarOpen }) => {
 
   return (
     <div>
-      <div className="sticky top-0 z-40 flex h-20 shrink-0 items-center border-b border-neutral-200 dark:border-neutral-700 gap-x-4 bg-white dark:bg-neutral-800 px-4  sm:gap-x-6 sm:px-6 lg:px-8">
+      <div className="sticky top-0 z-40 flex shrink-0 items-center py-4 gap-x-4 bg-blue-50 dark:bg-neutral-900 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
         <button
           type="button"
           className="-m-2.5 p-2.5 text-gray-700 dark:text-white lg:hidden"

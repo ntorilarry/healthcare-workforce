@@ -7,8 +7,8 @@ import PendingVerifications from "./components/PendingVerifications";
 const Dashboard2 = () => {
   return (
     <div>
-      <main className="flex-1 overflow-auto p-4 md:p-6">
-        <div className="grid gap-6">
+      <main className=" overflow-auto">
+        <div className="grid gap-4 md:gap-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <h1 className="text-2xl font-bold">Admin Dashboard</h1>

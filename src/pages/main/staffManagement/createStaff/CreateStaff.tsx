@@ -66,7 +66,6 @@ const CreateStaff = () => {
           <FaChevronLeft className="h-4 w-4" />
           <span>Back to Staff List</span>
         </Link>
-     
       </header>
       <main className="flex-1 p-4 md:p-6">
         <div className="mx-auto max-w-4xl">

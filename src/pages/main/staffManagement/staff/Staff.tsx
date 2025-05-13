@@ -3,6 +3,7 @@ import type { DataTableColumn } from "../../../../components/DataTable";
 import DataTable from "../../../../components/DataTable";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { BiExport } from "react-icons/bi";
 
 interface staffItem {
   id: string;
@@ -40,7 +41,7 @@ const Staff = () => {
       name: "Lab Tech. Kwame Boateng",
       facility: "Cape Coast Teaching Hospital",
       role: "Lab Technician",
-      status: "Active",
+      status: "Inactive",
     },
   ];
 
@@ -68,7 +69,13 @@ const Staff = () => {
       header: "Status",
       accessor: "status",
       render: (item) => (
-        <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-amber-100 text-amber-800">
+        <span
+          className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+            item.status === "Active"
+              ? "bg-green-100 text-green-800"
+              : "bg-red-100 text-red-800"
+          }`}
+        >
           {item.status}
         </span>
       ),
@@ -78,10 +85,13 @@ const Staff = () => {
   const actionButton = (
     <div className="flex flex-wrap gap-2">
       <button className="flex items-center gap-2 text-sm border border-black/30 hover:bg-neutral-800 hover:text-white text-black rounded-md px-3 py-1.5">
-        <FiPlus className="h-3.5 w-3.5" />
+        <BiExport className="h-3.5 w-3.5" />
         Export
       </button>
-      <Link to="/staff/create" className="flex items-center gap-2 text-sm bg-neutral-800 text-white rounded-md px-3 py-1.5 hover:bg-neutral-900">
+      <Link
+        to="/staff/create"
+        className="flex items-center gap-2 text-sm bg-neutral-800 text-white rounded-md px-3 py-1.5 hover:bg-neutral-900"
+      >
         <FiPlus className="h-3.5 w-3.5" />
         Add Staff
       </Link>

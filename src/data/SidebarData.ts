@@ -2,6 +2,7 @@ import { FiUsers } from "react-icons/fi";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { RiDashboardHorizontalLine } from "react-icons/ri";
 import { RxDashboard } from "react-icons/rx";
+import { GrCertificate } from "react-icons/gr";
 
 export const navigation = [
   {
@@ -26,5 +27,11 @@ export const navigation = [
     name: "Staff Management",
     href: "/staff/list",
     icon: FiUsers,
+  },
+
+  {
+    name: "Certifications",
+    href: "/certifications",
+    icon: GrCertificate,
   },
 ];

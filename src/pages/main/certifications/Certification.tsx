@@ -172,7 +172,7 @@ const Certification = () => {
                 }`
               }
             >
-              Nursing
+              Security
             </Tab>
             <Tab
               className={({ selected }) =>
@@ -183,18 +183,7 @@ const Certification = () => {
                 }`
               }
             >
-              Technical
-            </Tab>
-            <Tab
-              className={({ selected }) =>
-                `w-full py-2 text-sm font-medium leading-5 rounded-md ${
-                  selected
-                    ? "bg-white shadow text-blue-700"
-                    : "text-gray-600 hover:bg-white/[0.12] hover:text-gray-700"
-                }`
-              }
-            >
-              Expiring Soon
+              Sanitation
             </Tab>
           </TabList>
           <TabPanels className="mt-0">

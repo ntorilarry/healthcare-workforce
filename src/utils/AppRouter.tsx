@@ -8,6 +8,7 @@ import CreateStaff from "../pages/main/staffManagement/createStaff/CreateStaff";
 import ViewStaff from "../pages/main/staffManagement/viewStaff/ViewStaff";
 import Certification from "../pages/main/certifications/Certification";
 import HealthcareWorkerDashboard from "../pages/main/dashboards/healthcareWorkerDashboard/HealthcareWorkerDashboard";
+import { MFA } from "../pages/auth/Mfa";
 
 const AppRouter = () => {
   return (
@@ -15,13 +16,17 @@ const AppRouter = () => {
       <Route path="/auth">
         <Route index element={<Navigate replace to="login" />} />
         <Route path="login" element={<Login />} />
+        <Route path="mfa" element={<MFA />} />
       </Route>
 
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Navigate replace to="/dashboard1" />} />
         <Route path="dashboard1" element={<Dashboard />} />
         <Route path="dashboard2" element={<Dashboard2 />} />
-        <Route path="healthcare-worker-dashboard" element={<HealthcareWorkerDashboard />} />
+        <Route
+          path="healthcare-worker-dashboard"
+          element={<HealthcareWorkerDashboard />}
+        />
 
         <Route path="staff">
           <Route index element={<Navigate replace to="list" />} />

@@ -1,5 +1,8 @@
 import { FiUsers } from "react-icons/fi";
-import { MdOutlineDashboardCustomize } from "react-icons/md";
+import {
+  MdOutlineDashboardCustomize,
+  MdOutlineSpaceDashboard,
+} from "react-icons/md";
 import { RiDashboardHorizontalLine } from "react-icons/ri";
 import { RxDashboard } from "react-icons/rx";
 import { GrCertificate } from "react-icons/gr";
@@ -19,6 +22,11 @@ export const navigation = [
         name: "Dashboard2",
         href: "/dashboard2",
         icon: RiDashboardHorizontalLine,
+      },
+      {
+        name: "Healthcare Worker",
+        href: "/healthcare-worker-dashboard",
+        icon: MdOutlineSpaceDashboard,
       },
     ],
   },

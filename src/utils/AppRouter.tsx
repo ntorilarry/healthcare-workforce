@@ -13,6 +13,8 @@ import ListCertificate from "../pages/main/certificationLicensing/listCertificat
 import { AddCertificate } from "../pages/main/certificationLicensing/addCertificates/AddCertificate";
 import { ExpiryAlerts } from "../pages/main/certificationLicensing/expiryAlerts/ExpiryAlerts";
 import { ViewCertificate } from "../pages/main/certificationLicensing/viewCertificate/ViewCertificate";
+import Transfers from "../pages/main/employmentLifecycleManagement/transfers/Transfers";
+import Promotions from "../pages/main/employmentLifecycleManagement/promtions/Promotions";
 
 const AppRouter = () => {
   return (
@@ -46,6 +48,12 @@ const AppRouter = () => {
           <Route path="edit-certificates" element={<EditCertificates />} />
           <Route path="view-certificate" element={<ViewCertificate />} />
           <Route path="expiry-alerts" element={<ExpiryAlerts />} />
+        </Route>
+
+        <Route path="employment-lifecycle">
+          <Route index element={<Navigate replace to="promotions" />} />
+          <Route path="promotions" element={<Promotions />} />
+          <Route path="transfers" element={<Transfers />} />
         </Route>
       </Route>
 

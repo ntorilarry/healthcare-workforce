@@ -2,12 +2,14 @@ import { FiUsers } from "react-icons/fi";
 import {
   MdOutlineDashboardCustomize,
   MdOutlineSpaceDashboard,
-  MdOutlineWorkOutline,
 } from "react-icons/md";
 import { RiDashboardHorizontalLine, RiPassExpiredLine } from "react-icons/ri";
 import { RxDashboard } from "react-icons/rx";
 import { GrCertificate } from "react-icons/gr";
 import { TbLicense } from "react-icons/tb";
+import { BiTransfer } from "react-icons/bi";
+import { GiStarCycle } from "react-icons/gi";
+import { CiStar } from "react-icons/ci";
 
 export const navigation = [
   {
@@ -58,18 +60,18 @@ export const navigation = [
   },
   {
     name: "Employment Lifecycle",
-    href: "/certification-&-licensing/list-certificates",
-    icon: MdOutlineWorkOutline,
+    href: "/employment-lifecycle/promotions",
+    icon: GiStarCycle,
     subItems: [
       {
-        name: "List Certificates",
-        href: "/certification-&-licensing/list-certificates",
-        icon: TbLicense,
+        name: "Promotions",
+        href: "/employment-lifecycle/promotions",
+        icon: CiStar,
       },
       {
-        name: "Expiry Alerts",
-        href: "/certification-&-licensing/expiry-alerts",
-        icon: RiPassExpiredLine,
+        name: "Transfers",
+        href: "/employment-lifecycle/Transfers",
+        icon: BiTransfer,
       },
     ],
   },

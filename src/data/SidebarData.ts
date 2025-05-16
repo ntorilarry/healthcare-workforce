@@ -2,10 +2,12 @@ import { FiUsers } from "react-icons/fi";
 import {
   MdOutlineDashboardCustomize,
   MdOutlineSpaceDashboard,
+  MdOutlineWorkOutline,
 } from "react-icons/md";
-import { RiDashboardHorizontalLine } from "react-icons/ri";
+import { RiDashboardHorizontalLine, RiPassExpiredLine } from "react-icons/ri";
 import { RxDashboard } from "react-icons/rx";
 import { GrCertificate } from "react-icons/gr";
+import { TbLicense } from "react-icons/tb";
 
 export const navigation = [
   {
@@ -32,14 +34,43 @@ export const navigation = [
   },
 
   {
-    name: "Staff Management",
-    href: "/staff/list",
+    name: "Workforce Management",
+    href: "workforce-management/list-staff",
     icon: FiUsers,
   },
 
   {
-    name: "Certifications",
-    href: "/certifications",
+    name: "Certification & Licensing",
+    href: "/certification-&-licensing/list-certificates",
     icon: GrCertificate,
+    subItems: [
+      {
+        name: "List Certificates",
+        href: "/certification-&-licensing/list-certificates",
+        icon: TbLicense,
+      },
+      {
+        name: "Expiry Alerts",
+        href: "/certification-&-licensing/expiry-alerts",
+        icon: RiPassExpiredLine,
+      },
+    ],
+  },
+  {
+    name: "Employment Lifecycle",
+    href: "/certification-&-licensing/list-certificates",
+    icon: MdOutlineWorkOutline,
+    subItems: [
+      {
+        name: "List Certificates",
+        href: "/certification-&-licensing/list-certificates",
+        icon: TbLicense,
+      },
+      {
+        name: "Expiry Alerts",
+        href: "/certification-&-licensing/expiry-alerts",
+        icon: RiPassExpiredLine,
+      },
+    ],
   },
 ];

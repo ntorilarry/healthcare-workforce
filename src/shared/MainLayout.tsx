@@ -9,7 +9,7 @@ const MainLayout = () => {
   return (
     <div className="dark:bg-neutral-900 bg-blue-50 min-h-screen  rounded-4xl ">
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-      <div className="lg:pl-[250px] rounded-4xl">
+      <div className="lg:pl-[280px] rounded-4xl">
         <div className="sticky top-0 z-40">
           <Header setSidebarOpen={setSidebarOpen} />
         </div>

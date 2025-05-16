@@ -92,7 +92,7 @@ const DataTable = <T extends { id: string }>({
               <MenuItem>
                 <div className="px-3 py-1.5 text-sm font-medium">Actions</div>
               </MenuItem>
-              <div className="border-t border-gray-200" />
+              <div className="border-t border-neutral-200" />
               {actionItems.map((action, index) => (
                 <MenuItem key={index}>
                   {({ active }) => (
@@ -131,7 +131,7 @@ const DataTable = <T extends { id: string }>({
       )}
 
       <div className={`${title ? "pt-0" : ""} p-6`}>
-        <div className="border border-gray-200 bg-white rounded-md overflow-hidden">
+        <div className="border border-neutral-200 bg-white rounded-md overflow-hidden">
           <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">

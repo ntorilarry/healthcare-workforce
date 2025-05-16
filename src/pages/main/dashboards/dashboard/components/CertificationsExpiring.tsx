@@ -1,4 +1,4 @@
- "../../../../components/DataTable";
+"../../../../components/DataTable";
 
 import type { DataTableColumn } from "../../../../../components/DataTable";
 import DataTable from "../../../../../components/DataTable";
@@ -92,7 +92,7 @@ const CertificationsExpiring = () => {
   return (
     <div>
       {" "}
-      <div className="rounded-lg border border-gray-200 bg-white">
+      <div className="rounded-lg border border-neutral-200 bg-white">
         <DataTable
           data={tableData}
           columns={columns}

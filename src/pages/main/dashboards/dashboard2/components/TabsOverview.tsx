@@ -1,6 +1,11 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { useState } from "react";
-import { FiCheckCircle, FiFileText, FiMapPin, FiUserPlus } from "react-icons/fi";
+import {
+  FiCheckCircle,
+  FiFileText,
+  FiMapPin,
+  FiUserPlus,
+} from "react-icons/fi";
 import { BarChart, LineChart, PieChart } from "./Charts";
 
 const TabsOverview = () => {
@@ -47,7 +52,7 @@ const TabsOverview = () => {
             </Tab>
           </TabList>
           <div className="ml-auto flex items-center gap-2">
-            <button className="flex items-center gap-2 text-sm border border-gray-200 rounded-md px-3 py-1.5 hover:bg-gray-50">
+            <button className="flex items-center gap-2 text-sm border border-neutral-200 rounded-md px-3 py-1.5 hover:bg-gray-50">
               <FiFileText className="h-3.5 w-3.5" />
               Export
             </button>
@@ -56,7 +61,7 @@ const TabsOverview = () => {
         <TabPanels className="mt-4">
           <TabPanel className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-              <div className="border border-gray-200 bg-white rounded-lg lg:col-span-4">
+              <div className="border border-neutral-200 bg-white rounded-lg lg:col-span-4">
                 <div className="p-6">
                   <h3 className="text-lg font-semibold">Staff per Region</h3>
                   <p className="text-sm text-gray-600">
@@ -67,7 +72,7 @@ const TabsOverview = () => {
                   <BarChart />
                 </div>
               </div>
-              <div className="border border-gray-200 bg-white rounded-lg lg:col-span-3">
+              <div className="border border-neutral-200 bg-white rounded-lg lg:col-span-3">
                 <div className="p-6">
                   <h3 className="text-lg font-semibold">
                     Upcoming Retirements
@@ -82,7 +87,7 @@ const TabsOverview = () => {
               </div>
             </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-              <div className="border border-gray-200 bg-white rounded-lg lg:col-span-3">
+              <div className="border border-neutral-200 bg-white rounded-lg lg:col-span-3">
                 <div className="p-6">
                   <h3 className="text-lg font-semibold">
                     Certifications Expiring
@@ -95,7 +100,7 @@ const TabsOverview = () => {
                   <PieChart />
                 </div>
               </div>
-              <div className="border border-gray-200 bg-white rounded-lg lg:col-span-4">
+              <div className="border border-neutral-200 bg-white rounded-lg lg:col-span-4">
                 <div className="p-6">
                   <h3 className="text-lg font-semibold">Recent Activities</h3>
                   <p className="text-sm text-gray-600">
@@ -167,7 +172,7 @@ const TabsOverview = () => {
             </div>
           </TabPanel>
           <TabPanel className="space-y-4">
-            <div className="border border-gray-200 bg-white rounded-lg">
+            <div className="border border-neutral-200 bg-white rounded-lg">
               <div className="p-6">
                 <h3 className="text-lg font-semibold">Advanced Analytics</h3>
                 <p className="text-sm text-gray-600">
@@ -175,7 +180,7 @@ const TabsOverview = () => {
                 </p>
               </div>
               <div className="p-6 pt-0">
-                <div className="h-[300px] flex items-center justify-center border border-gray-200 bg-white rounded-md">
+                <div className="h-[300px] flex items-center justify-center border border-neutral-200 bg-white rounded-md">
                   <p className="text-gray-500">
                     Advanced analytics content will appear here
                   </p>
@@ -184,7 +189,7 @@ const TabsOverview = () => {
             </div>
           </TabPanel>
           <TabPanel className="space-y-4">
-            <div className="border border-gray-200 bg-white rounded-lg">
+            <div className="border border-neutral-200 bg-white rounded-lg">
               <div className="p-6">
                 <h3 className="text-lg font-semibold">Generated Reports</h3>
                 <p className="text-sm text-gray-600">
@@ -192,7 +197,7 @@ const TabsOverview = () => {
                 </p>
               </div>
               <div className="p-6 pt-0">
-                <div className="h-[300px] flex items-center justify-center border border-gray-200 bg-white rounded-md">
+                <div className="h-[300px] flex items-center justify-center border border-neutral-200 bg-white rounded-md">
                   <p className="text-gray-500">
                     Reports content will appear here
                   </p>

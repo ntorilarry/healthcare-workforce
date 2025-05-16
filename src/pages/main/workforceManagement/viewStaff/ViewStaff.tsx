@@ -16,18 +16,28 @@ import {
   FaExclamationCircle,
 } from "react-icons/fa";
 import { FiActivity } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ViewStaff = () => {
+  const navigate = useNavigate();
   const [selectedTab, setSelectedTab] = useState("employment");
 
+  const handleGoBack = () => {
+    navigate(-1);
+  };
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border-b border-neutral-200 bg-white px-4 sm:gap-8 lg:px-6">
-        <Link to="/staff/list" className="flex items-center gap-2">
+        <button
+          onClick={handleGoBack}
+          className="flex items-center gap-2 cursor-pointer"
+        >
           <FaChevronLeft className="h-4 w-4" />
-          <span>Back to Staff List</span>
-        </Link>
+          <span>Go back</span>
+        </button>
+        <div className="flex-1">
+          <h1 className="text-lg font-semibold">View Staff</h1>
+        </div>
         <div className="ml-auto flex items-center gap-2">
           <button className="flex items-center gap-2 rounded-md border border-neutral-400 px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-50">
             <FaDownload className="h-4 w-4" />
@@ -161,9 +171,9 @@ const ViewStaff = () => {
                     </p>
                   </div>
                   <div className="p-4">
-                    <div className="relative border-l border-gray-200 pl-6">
+                    <div className="relative border-l border-neutral-200 pl-6">
                       <div className="mb-10 relative">
-                        <div className="absolute -left-[40px] flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 bg-white">
+                        <div className="absolute -left-[40px] flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 bg-white">
                           <FaBuilding className="h-4 w-4 text-blue-500" />
                         </div>
                         <div className="pt-1">
@@ -184,7 +194,7 @@ const ViewStaff = () => {
                         </div>
                       </div>
                       <div className="mb-10 relative">
-                        <div className="absolute -left-[40px] flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 bg-white">
+                        <div className="absolute -left-[40px] flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 bg-white">
                           <FaBuilding className="h-4 w-4 text-blue-500" />
                         </div>
                         <div className="pt-1">
@@ -205,7 +215,7 @@ const ViewStaff = () => {
                         </div>
                       </div>
                       <div className="relative">
-                        <div className="absolute -left-[40px] flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 bg-white">
+                        <div className="absolute -left-[40px] flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 bg-white">
                           <FaBuilding className="h-4 w-4 text-blue-500" />
                         </div>
                         <div className="pt-1">

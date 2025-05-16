@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { FiUpload } from "react-icons/fi";
 import { FaChevronLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CreateStaff = () => {
+  const navigate = useNavigate();
   const [selectedTab, setSelectedTab] = useState(0);
   const [formData, setFormData] = useState({
     // Personal Information
@@ -59,13 +60,22 @@ const CreateStaff = () => {
     console.log(formData);
   };
 
+  const handleGoBack = () => {
+    navigate(-1);
+  };
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border-b border-neutral-200 bg-white px-4 sm:gap-8 lg:px-6">
-        <Link to="/staff/list" className="flex items-center gap-2">
+        <button
+          onClick={handleGoBack}
+          className="flex items-center gap-2 cursor-pointer"
+        >
           <FaChevronLeft className="h-4 w-4" />
-          <span>Back to Staff List</span>
-        </Link>
+          <span>Go back</span>
+        </button>
+        <div className="flex-1">
+          <h1 className="text-lg font-semibold">Add Staff</h1>
+        </div>
       </header>
       <main className="flex-1 p-4 md:p-6">
         <div className="mx-auto max-w-4xl">

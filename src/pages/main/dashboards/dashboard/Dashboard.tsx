@@ -33,10 +33,10 @@ export const Dashboard = () => {
 
           {/* Charts and Tables */}
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-            <div className="rounded-lg border border-gray-200 bg-white lg:col-span-4">
+            <div className="rounded-lg border border-neutral-200 bg-white lg:col-span-4">
               <StaffDistribution />
             </div>
-            <div className="rounded-lg border border-gray-200 bg-white lg:col-span-3">
+            <div className="rounded-lg border border-neutral-200 bg-white lg:col-span-3">
               <UpcomingRetirements />
             </div>
           </div>

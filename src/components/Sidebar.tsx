@@ -23,7 +23,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             className="fixed inset-0 bg-neutral-900/80"
             onClick={() => setSidebarOpen(false)}
           />
-          <div className="relative flex w-full max-w-[250px] flex-1 bg-white dark:bg-neutral-800">
+          <div className="relative flex w-full max-w-[280px] flex-1 bg-white dark:bg-neutral-800">
             <button
               className="absolute top-4 right-4 text-white"
               onClick={() => setSidebarOpen(false)}
@@ -44,7 +44,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                 "group flex justify-between items-center w-full rounded-lg py-2 px-3  text-sm font-medium text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700"
                               )}
                             >
-                              <div className="flex gap-x-3 items-center">
+                              <div className="flex gap-x-2 items-center">
                                 <item.icon className="h-4 w-4" />
                                 {item.name}
                               </div>
@@ -71,7 +71,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                       isActive
                                         ? "bg-white text-black"
                                         : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
-                                      "flex items-center gap-x-3 rounded-2xl py-2 px-3  mt-1 text-sm"
+                                      "flex items-center gap-x-2 rounded-2xl py-2 px-3  mt-1 text-sm"
                                     )}
                                   >
                                     <subItem.icon className="h-4 w-4" />
@@ -93,7 +93,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                           "group flex justify-between mt-1 items-center w-full rounded-2xl py-2 px-3 text-sm font-medium"
                         )}
                       >
-                        <div className="flex gap-x-3 items-center">
+                        <div className="flex gap-x-2 items-center">
                           <item.icon className="h-4 w-4" />
                           {item.name}
                         </div>
@@ -108,7 +108,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       )}
 
       {/* Desktop Sidebar */}
-      <div className="hidden lg:fixed lg:inset-y-0 lg:z-30 lg:flex lg:flex-col lg:w-[250px]">
+      <div className="hidden lg:fixed lg:inset-y-0 lg:z-30 lg:flex lg:flex-col lg:w-[280px]">
         <div className="flex grow flex-col overflow-y-auto bg-blue-50 border-neutral-200 dark:bg-neutral-900 px-4 pb-4">
           <div className="flex items-center justify-between pt-6 shrink-0">
             <a href="/" className="flex px-2 items-center">
@@ -131,7 +131,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                               "group flex justify-between items-center w-full rounded-xl py-2 px-3 text-sm font-medium text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700"
                             )}
                           >
-                            <div className="flex gap-x-3 items-center">
+                            <div className="flex gap-x-2 items-center">
                               <item.icon className="h-4 w-4" />
                               {item.name}
                             </div>
@@ -158,7 +158,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                     isActive
                                       ? "bg-white text-black"
                                       : "text-neutral-600 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-700",
-                                    "flex items-center gap-x-3 rounded-2xl py-2 px-3 mt-1 text-sm"
+                                    "flex items-center gap-x-2 rounded-2xl py-2 px-3 mt-1 text-sm"
                                   )}
                                 >
                                   <subItem.icon className="h-4 w-4" />
@@ -180,7 +180,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                         "group flex justify-between items-center mt-1 w-full rounded-2xl py-2 px-3 text-sm font-medium"
                       )}
                     >
-                      <div className="flex gap-x-3 items-center">
+                      <div className="flex gap-x-2 items-center">
                         <item.icon className="h-4 w-4" />
                         {item.name}
                       </div>

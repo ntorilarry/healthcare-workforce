@@ -52,7 +52,7 @@ const HealthcareWorkerDashboard = () => {
 
             {/* Profile Overview */}
             <div className="bg-white rounded-lg shadow-sm">
-              <div className="p-6 border-b border-gray-200">
+              <div className="p-6 border-b border-neutral-200">
                 <h3 className="text-lg font-semibold">Profile Overview</h3>
                 <p className="text-sm text-gray-500">
                   Your current employment information
@@ -93,7 +93,7 @@ const HealthcareWorkerDashboard = () => {
 
             {/* Notifications */}
             <div className="bg-white rounded-lg shadow-sm">
-              <div className="p-6 border-b border-gray-200">
+              <div className="p-6 border-b border-neutral-200">
                 <h3 className="text-lg font-semibold">Notifications</h3>
                 <p className="text-sm text-gray-500">
                   Recent alerts and updates
@@ -101,7 +101,7 @@ const HealthcareWorkerDashboard = () => {
               </div>
               <div className="p-6">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4 rounded-lg border border-gray-200 p-4">
+                  <div className="flex items-start gap-4 rounded-lg border border-neutral-200 p-4">
                     <FiAlertCircle className="h-5 w-5 text-amber-500 mt-0.5" />
                     <div>
                       <h3 className="font-semibold">
@@ -118,7 +118,7 @@ const HealthcareWorkerDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 rounded-lg border border-gray-200 p-4">
+                  <div className="flex items-start gap-4 rounded-lg border border-neutral-200 p-4">
                     <FiCalendar className="h-5 w-5 text-blue-500 mt-0.5" />
                     <div>
                       <h3 className="font-semibold">
@@ -135,7 +135,7 @@ const HealthcareWorkerDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 rounded-lg border border-gray-200 p-4">
+                  <div className="flex items-start gap-4 rounded-lg border border-neutral-200 p-4">
                     <FiMail className="h-5 w-5 text-green-500 mt-0.5" />
                     <div>
                       <h3 className="font-semibold">

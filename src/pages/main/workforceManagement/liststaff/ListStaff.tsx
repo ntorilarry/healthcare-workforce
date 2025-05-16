@@ -13,7 +13,7 @@ interface staffItem {
   status: "Active" | "Inactive";
 }
 
-const Staff = () => {
+const ListStaff = () => {
   const tableData: staffItem[] = [
     {
       id: "HW-2023-0042",
@@ -89,7 +89,7 @@ const Staff = () => {
         Export
       </button>
       <Link
-        to="/staff/create"
+        to="/workforce-management/create-staff"
         className="flex items-center gap-2 text-sm bg-neutral-800 text-white rounded-md px-3 py-1.5 hover:bg-neutral-900"
       >
         <FiPlus className="h-3.5 w-3.5" />
@@ -103,11 +103,11 @@ const Staff = () => {
   const [totalPages] = useState(1);
 
   const viewProfile = () => {
-    navigate("/staff/view");
+    navigate("/workforce-management/view-staff");
   };
 
   const editDetails = () => {
-    navigate("/staff/create");
+    navigate("/workforce-management/create-staff");
   };
   const transferUser = () => {
     navigate("/staff/profile");
@@ -116,7 +116,7 @@ const Staff = () => {
     navigate("/staff/profile");
   };
   return (
-    <div className="rounded-lg border border-gray-200 bg-white">
+    <div className="rounded-lg border border-neutral-200 bg-white">
       {" "}
       <DataTable
         data={tableData}
@@ -140,4 +140,4 @@ const Staff = () => {
   );
 };
 
-export default Staff;
+export default ListStaff;

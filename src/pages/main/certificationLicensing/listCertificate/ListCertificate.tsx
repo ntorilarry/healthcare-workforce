@@ -1,8 +1,8 @@
 import { FiPlus } from "react-icons/fi";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import type { DataTableColumn } from "../../../components/DataTable";
-import DataTable from "../../../components/DataTable";
+import type { DataTableColumn } from "../../../../components/DataTable";
+import DataTable from "../../../../components/DataTable";
 import { FaAward } from "react-icons/fa";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { BiExport } from "react-icons/bi";
@@ -17,7 +17,7 @@ interface certificationItem {
   status: "Active" | "Expiring Soon";
 }
 
-const Certification = () => {
+const ListCertificate = () => {
   const tableData: certificationItem[] = [
     {
       id: "1",
@@ -108,9 +108,12 @@ const Certification = () => {
       accessor: "id",
       render: () => (
         <div className="flex ">
-          <button className="rounded-md px-2 py-1 text-sm text-blue-500 hover:bg-blue-100">
+          <Link
+            to="/certification-&-licensing/view-certificate"
+            className="rounded-md px-2 py-1 text-sm text-blue-500 hover:bg-blue-100"
+          >
             View
-          </button>
+          </Link>
         </div>
       ),
     },
@@ -123,7 +126,7 @@ const Certification = () => {
         Export
       </button>
       <Link
-        to="/staff/create"
+        to="/certification-&-licensing/add-certificates"
         className="flex items-center gap-2 text-sm bg-neutral-800 text-white rounded-md px-3 py-1.5 hover:bg-neutral-900"
       >
         <FiPlus className="h-3.5 w-3.5" />
@@ -137,7 +140,41 @@ const Certification = () => {
 
   return (
     <div>
-      <div className="rounded-lg border border-gray-200 bg-white">
+      <div className="grid gap-4 md:grid-cols-3 py-6">
+        <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm">
+          <div className="flex flex-row items-center justify-between pb-2">
+            <h3 className="text-sm font-medium">Valid Certifications</h3>
+            <FaAward className="h-4 w-4 text-green-500" />
+          </div>
+          <div className="py-4 pt-0">
+            <div className="text-2xl font-bold">2,845</div>
+            <p className="text-xs text-gray-500">95% of total certifications</p>
+          </div>
+        </div>
+
+        <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm">
+          <div className="flex flex-row items-center justify-between pb-2">
+            <h3 className="text-sm font-medium">Expiring in 90 Days</h3>
+            <FaAward className="h-4 w-4 text-amber-500" />
+          </div>
+          <div className="py-4 pt-0">
+            <div className="text-2xl font-bold">124</div>
+            <p className="text-xs text-gray-500">4% of total certifications</p>
+          </div>
+        </div>
+
+        <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm">
+          <div className="flex flex-row items-center justify-between pb-2">
+            <h3 className="text-sm font-medium">Expired</h3>
+            <FaAward className="h-4 w-4 text-red-500" />
+          </div>
+          <div className="py-4 pt-0">
+            <div className="text-2xl font-bold">32</div>
+            <p className="text-xs text-gray-500">1% of total certifications</p>
+          </div>
+        </div>
+      </div>
+      <div className="rounded-lg border border-neutral-200 bg-white">
         {" "}
         <TabGroup defaultIndex={0}>
           <TabList className="flex space-x-1 rounded-lg bg-gray-100 p-1 mb-4">
@@ -205,42 +242,8 @@ const Certification = () => {
           </TabPanels>
         </TabGroup>
       </div>
-      <div className="grid gap-4 md:grid-cols-3 pt-6">
-        <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
-          <div className="flex flex-row items-center justify-between pb-2">
-            <h3 className="text-sm font-medium">Valid Certifications</h3>
-            <FaAward className="h-4 w-4 text-green-500" />
-          </div>
-          <div className="py-4 pt-0">
-            <div className="text-2xl font-bold">2,845</div>
-            <p className="text-xs text-gray-500">95% of total certifications</p>
-          </div>
-        </div>
-
-        <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
-          <div className="flex flex-row items-center justify-between pb-2">
-            <h3 className="text-sm font-medium">Expiring in 90 Days</h3>
-            <FaAward className="h-4 w-4 text-amber-500" />
-          </div>
-          <div className="py-4 pt-0">
-            <div className="text-2xl font-bold">124</div>
-            <p className="text-xs text-gray-500">4% of total certifications</p>
-          </div>
-        </div>
-
-        <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
-          <div className="flex flex-row items-center justify-between pb-2">
-            <h3 className="text-sm font-medium">Expired</h3>
-            <FaAward className="h-4 w-4 text-red-500" />
-          </div>
-          <div className="py-4 pt-0">
-            <div className="text-2xl font-bold">32</div>
-            <p className="text-xs text-gray-500">1% of total certifications</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default Certification;
+export default ListCertificate;

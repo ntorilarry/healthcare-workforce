@@ -9,19 +9,19 @@ const QuickLinks2 = () => {
         <p className="text-sm text-gray-600">Common administrative tasks</p>
       </div>
       <div className="p-6 pt-0 grid gap-2">
-        <button className="w-full flex items-center justify-start text-sm border border-gray-200 rounded-md px-3 py-2 hover:bg-gray-50">
+        <button className="w-full flex items-center justify-start text-sm border border-neutral-200 rounded-md px-3 py-2 hover:bg-gray-50">
           <FiUserPlus className="mr-2 h-4 w-4" />
           Add New Staff
         </button>
-        <button className="w-full flex items-center justify-start text-sm border border-gray-200 rounded-md px-3 py-2 hover:bg-gray-50">
+        <button className="w-full flex items-center justify-start text-sm border border-neutral-200 rounded-md px-3 py-2 hover:bg-gray-50">
           <FiFileText className="mr-2 h-4 w-4" />
           View Reports
         </button>
-        <button className="w-full flex items-center justify-start text-sm border border-gray-200 rounded-md px-3 py-2 hover:bg-gray-50">
+        <button className="w-full flex items-center justify-start text-sm border border-neutral-200 rounded-md px-3 py-2 hover:bg-gray-50">
           <FiCheckCircle className="mr-2 h-4 w-4" />
           Pending Approvals
         </button>
-        <button className="w-full flex items-center justify-start text-sm border border-gray-200 rounded-md px-3 py-2 hover:bg-gray-50">
+        <button className="w-full flex items-center justify-start text-sm border border-neutral-200 rounded-md px-3 py-2 hover:bg-gray-50">
           <FiBell className="mr-2 h-4 w-4" />
           Send Notifications
         </button>

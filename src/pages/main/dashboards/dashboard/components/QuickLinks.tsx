@@ -1,11 +1,16 @@
-import { FaCalendarAlt, FaClipboardList, FaFileAlt, FaUserPlus } from "react-icons/fa";
+import {
+  FaCalendarAlt,
+  FaClipboardList,
+  FaFileAlt,
+  FaUserPlus,
+} from "react-icons/fa";
 
 const QuickLinks = () => {
   return (
     <div>
       {" "}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div className="flex flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center">
+        <div className="flex flex-col items-center justify-center rounded-lg border border-neutral-200 bg-white p-6 text-center">
           <FaUserPlus className="h-10 w-10 text-gray-500 mb-2" />
           <h3 className="text-lg font-medium">Add New Staff</h3>
           <p className="text-sm text-gray-500 mb-4">
@@ -15,7 +20,7 @@ const QuickLinks = () => {
             Add Staff
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center">
+        <div className="flex flex-col items-center justify-center rounded-lg border border-neutral-200 bg-white p-6 text-center">
           <FaFileAlt className="h-10 w-10 text-gray-500 mb-2" />
           <h3 className="text-lg font-medium">View Reports</h3>
           <p className="text-sm text-gray-500 mb-4">
@@ -25,7 +30,7 @@ const QuickLinks = () => {
             View Reports
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center">
+        <div className="flex flex-col items-center justify-center rounded-lg border border-neutral-200 bg-white p-6 text-center">
           <FaClipboardList className="h-10 w-10 text-gray-500 mb-2" />
           <h3 className="text-lg font-medium">Pending Approvals</h3>
           <p className="text-sm text-gray-500 mb-4">
@@ -35,7 +40,7 @@ const QuickLinks = () => {
             View Approvals
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center">
+        <div className="flex flex-col items-center justify-center rounded-lg border border-neutral-200 bg-white p-6 text-center">
           <FaCalendarAlt className="h-10 w-10 text-gray-500 mb-2" />
           <h3 className="text-lg font-medium">Upcoming Events</h3>
           <p className="text-sm text-gray-500 mb-4">

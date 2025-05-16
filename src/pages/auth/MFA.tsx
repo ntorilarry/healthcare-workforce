@@ -159,7 +159,7 @@ export const MFA = () => {
             </Tab.Group>
           </div>
 
-          <div className="flex justify-center border-t border-gray-200 py-4">
+          <div className="flex justify-center border-t border-neutral-200 py-4">
             <Link
               to="/auth/login" // or href if using Next.js
               className="flex items-center text-sm font-medium text-blue-600 hover:text-blue-500"

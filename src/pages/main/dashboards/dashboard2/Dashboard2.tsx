@@ -17,7 +17,7 @@ const Dashboard2 = () => {
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <button className="flex items-center gap-2 text-sm border border-gray-200 rounded-md px-3 py-1.5 hover:bg-gray-50">
+              <button className="flex items-center gap-2 text-sm border border-neutral-200 rounded-md px-3 py-1.5 hover:bg-gray-50">
                 <FiCalendar className="h-3.5 w-3.5" />
                 <span>Apr 29, 2025</span>
               </button>
@@ -32,10 +32,10 @@ const Dashboard2 = () => {
           <TabsOverview />
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <div className="border border-gray-200 bg-white rounded-lg">
+            <div className="border border-neutral-200 bg-white rounded-lg">
               <QuickLinks2 />
             </div>
-            <div className="border border-gray-200 bg-white rounded-lg lg:col-span-2">
+            <div className="border border-neutral-200 bg-white rounded-lg lg:col-span-2">
               <PendingVerifications />
             </div>
           </div>

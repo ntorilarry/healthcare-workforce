@@ -6,29 +6,29 @@ export const ExpiryAlerts = () => {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
-      <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border-b border-neutral-200 bg-white px-4 sm:gap-8 lg:px-6">
+      <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border-b border-neutral-200 bg-white sm:gap-8">
         <div className="flex-1">
           <h1 className="text-lg font-semibold">Certification Expiry Alerts</h1>
         </div>
-        <button className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 bg-white p-0 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950">
+        <button className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 bg-white p-0 text-sm font-medium  transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950">
           <LuBell className="h-4 w-4" />
           <span className="sr-only">Notifications</span>
         </button>
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 p-4 md:p-6">
+      <main className="flex-1 py-4 ">
         <div className="grid gap-6">
           {/* Summary Cards */}
           <ExpiryCards />
 
           {/* Main Content Card */}
-          <div className="rounded-lg border border-neutral-200 bg-white shadow-sm">
+          <div className="rounded-lg border border-neutral-200 bg-white ">
             <ExpiryTable />
           </div>
 
           {/* Notification History */}
-          <div className="rounded-lg border border-neutral-200 bg-white shadow-sm">
+          <div className="rounded-lg border border-neutral-200 bg-white ">
             <div className="space-y-4 p-6">
               <div>
                 <h2 className="text-lg font-semibold">Notification History</h2>
@@ -70,7 +70,7 @@ export const ExpiryAlerts = () => {
           </div>
 
           {/* Notification Settings */}
-          <div className="rounded-lg border border-neutral-200 bg-white shadow-sm">
+          <div className="rounded-lg border border-neutral-200 bg-white ">
             <div className="space-y-4 p-6">
               <div>
                 <h2 className="text-lg font-semibold">Notification Settings</h2>
@@ -89,7 +89,7 @@ export const ExpiryAlerts = () => {
                     </label>
                     <select
                       id="firstNotification"
-                      className="mt-2 block w-full rounded-md border border-neutral-200 py-2 px-3 text-sm shadow-sm focus:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                      className="mt-2 block w-full rounded-md border border-neutral-200 py-2 px-3 text-sm  focus:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
                     >
                       <option value="30">30 days before expiry</option>
                       <option value="60">60 days before expiry</option>
@@ -106,7 +106,7 @@ export const ExpiryAlerts = () => {
                     </label>
                     <select
                       id="secondNotification"
-                      className="block mt-2 w-full rounded-md border border-neutral-200 py-2 px-3 text-sm shadow-sm focus:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                      className="block mt-2 w-full rounded-md border border-neutral-200 py-2 px-3 text-sm  focus:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
                       defaultValue="60"
                     >
                       <option value="30">30 days before expiry</option>
@@ -127,7 +127,7 @@ export const ExpiryAlerts = () => {
                     </label>
                     <select
                       id="finalNotification"
-                      className="block mt-2 w-full rounded-md border border-neutral-200 py-2 px-3 text-sm shadow-sm focus:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                      className="block mt-2 w-full rounded-md border border-neutral-200 py-2 px-3 text-sm  focus:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
                       defaultValue="30"
                     >
                       <option value="7">7 days before expiry</option>
@@ -145,7 +145,7 @@ export const ExpiryAlerts = () => {
                     </label>
                     <select
                       id="notificationMethod"
-                      className="block w-full mt-2 rounded-md border border-neutral-200 py-2 px-3 text-sm shadow-sm focus:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                      className="block w-full mt-2 rounded-md border border-neutral-200 py-2 px-3 text-sm  focus:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
                       defaultValue="both"
                     >
                       <option value="email">Email only</option>

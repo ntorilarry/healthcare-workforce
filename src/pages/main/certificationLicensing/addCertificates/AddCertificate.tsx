@@ -25,7 +25,7 @@ export const AddCertificate = () => {
       </header>
       <main className="flex-1 p-4 md:p-6">
         <div className="mx-auto max-w-4xl">
-          <div className="rounded-lg border border-neutral-200 bg-white shadow-sm">
+          <div className="rounded-lg border border-neutral-200 bg-white ">
             <div className="border-b border-neutral-200 p-6">
               <h2 className="text-xl font-semibold">Certification Details</h2>
               <p className="text-sm text-gray-500">
@@ -211,7 +211,7 @@ export const AddCertificate = () => {
                         <div className="mt-4">
                           <button
                             type="button"
-                            className="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            className="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                           >
                             Select File
                           </button>
@@ -326,7 +326,7 @@ export const AddCertificate = () => {
                       <div className="mt-6">
                         <button
                           type="button"
-                          className="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                          className="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                         >
                           <LuRefreshCw className="mr-2 h-4 w-4" />
                           Verify with External Service
@@ -357,7 +357,7 @@ export const AddCertificate = () => {
                         <div className="mt-4">
                           <button
                             type="button"
-                            className="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            className="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                           >
                             Select File
                           </button>
@@ -371,13 +371,13 @@ export const AddCertificate = () => {
             <div className="flex justify-between border-t border-neutral-200 p-6">
               <button
                 type="button"
-                className="rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               >
                 Cancel
               </button>
               <button
                 type="button"
-                className="rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               >
                 Save Certification
               </button>

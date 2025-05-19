@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Tab } from "@headlessui/react";
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { FiArrowLeft } from "react-icons/fi";
-import { Link } from "react-router-dom"; // or 'next/link' if using Next.js
+import { Link } from "react-router-dom";
 
 export const MFA = () => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -32,7 +32,7 @@ export const MFA = () => {
           <p className="text-gray-500">Verify your identity to continue</p>
         </div>
 
-        <div className="rounded-lg bg-white shadow-sm">
+        <div className="rounded-lg bg-white ">
           <div className="p-6">
             <div className="mb-6">
               <h2 className="text-xl font-semibold text-gray-900">
@@ -43,8 +43,8 @@ export const MFA = () => {
               </p>
             </div>
 
-            <Tab.Group selectedIndex={selectedTab} onChange={setSelectedTab}>
-              <Tab.List className="grid grid-cols-3 gap-1 rounded-lg bg-gray-100 p-1">
+            <TabGroup selectedIndex={selectedTab} onChange={setSelectedTab}>
+              <TabList className="grid grid-cols-3 gap-1 rounded-lg bg-gray-100 p-1">
                 <Tab
                   className={`py-2 text-sm font-medium transition-colors ${
                     selectedTab === 0
@@ -72,11 +72,11 @@ export const MFA = () => {
                 >
                   Recovery
                 </Tab>
-              </Tab.List>
+              </TabList>
 
-              <Tab.Panels className="mt-4">
+              <TabPanels className="mt-4">
                 {/* OTP Panel */}
-                <Tab.Panel className="space-y-4">
+                <TabPanel className="space-y-4">
                   <div className="text-center text-sm text-gray-500">
                     <p>We've sent a 6-digit code to:</p>
                     <p className="font-medium">k****h@health.gov.gh</p>
@@ -104,10 +104,10 @@ export const MFA = () => {
                   <button className="w-full rounded-md bg-blue-600 py-2 px-4 font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     Verify
                   </button>
-                </Tab.Panel>
+                </TabPanel>
 
                 {/* App Panel */}
-                <Tab.Panel className="space-y-4">
+                <TabPanel className="space-y-4">
                   <div className="text-center text-sm text-gray-500">
                     <p>Enter the 6-digit code from your authenticator app</p>
                   </div>
@@ -128,10 +128,10 @@ export const MFA = () => {
                   <button className="w-full rounded-md bg-blue-600 py-2 px-4 font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     Verify
                   </button>
-                </Tab.Panel>
+                </TabPanel>
 
                 {/* Recovery Panel */}
-                <Tab.Panel className="space-y-4">
+                <TabPanel className="space-y-4">
                   <div className="text-center text-sm text-gray-500">
                     <p>Enter one of your recovery codes</p>
                   </div>
@@ -148,15 +148,15 @@ export const MFA = () => {
                       value={recoveryCode}
                       onChange={(e) => setRecoveryCode(e.target.value)}
                       placeholder="Enter recovery code"
-                      className="block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                      className="block w-full rounded-md border border-gray-300 py-2 px-3  focus:border-blue-500 focus:ring-blue-500"
                     />
                   </div>
                   <button className="w-full rounded-md bg-blue-600 py-2 px-4 font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     Verify
                   </button>
-                </Tab.Panel>
-              </Tab.Panels>
-            </Tab.Group>
+                </TabPanel>
+              </TabPanels>
+            </TabGroup>
           </div>
 
           <div className="flex justify-center border-t border-neutral-200 py-4">

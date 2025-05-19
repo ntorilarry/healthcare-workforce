@@ -24,9 +24,9 @@ const HealthcareWorkerDashboard = () => {
         <main className="flex-1 overflow-auto">
           <div className="grid gap-6">
             {/* Welcome Banner */}
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg shadow-sm">
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg ">
               <div className="flex flex-col md:flex-row items-center gap-4 p-6">
-                <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center shadow-sm">
+                <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center ">
                   <span className="text-xl font-medium text-gray-600">KM</span>
                 </div>
                 <div>
@@ -51,7 +51,7 @@ const HealthcareWorkerDashboard = () => {
             </div>
 
             {/* Profile Overview */}
-            <div className="bg-white rounded-lg shadow-sm">
+            <div className="bg-white rounded-lg ">
               <div className="p-6 border-b border-neutral-200">
                 <h3 className="text-lg font-semibold">Profile Overview</h3>
                 <p className="text-sm text-gray-500">
@@ -92,7 +92,7 @@ const HealthcareWorkerDashboard = () => {
             </div>
 
             {/* Notifications */}
-            <div className="bg-white rounded-lg shadow-sm">
+            <div className="bg-white rounded-lg ">
               <div className="p-6 border-b border-neutral-200">
                 <h3 className="text-lg font-semibold">Notifications</h3>
                 <p className="text-sm text-gray-500">
@@ -163,7 +163,7 @@ const HealthcareWorkerDashboard = () => {
                   onClick={() => setActiveTab("licenses")}
                   className={`py-2 px-4 text-sm font-medium rounded-md ${
                     activeTab === "licenses"
-                      ? "bg-white shadow-sm text-blue-600"
+                      ? "bg-white  text-blue-600"
                       : "text-gray-500 hover:text-gray-700"
                   }`}
                 >
@@ -173,7 +173,7 @@ const HealthcareWorkerDashboard = () => {
                   onClick={() => setActiveTab("upcoming")}
                   className={`py-2 px-4 text-sm font-medium rounded-md ${
                     activeTab === "upcoming"
-                      ? "bg-white shadow-sm text-blue-600"
+                      ? "bg-white  text-blue-600"
                       : "text-gray-500 hover:text-gray-700"
                   }`}
                 >
@@ -182,7 +182,7 @@ const HealthcareWorkerDashboard = () => {
               </div>
 
               {activeTab === "licenses" && (
-                <div className="bg-white rounded-lg shadow-sm">
+                <div className="bg-white rounded-lg ">
                   <div className="p-6 border-b border border-neutral-200">
                     <h3 className="text-lg font-semibold">
                       License & Certification Status
@@ -260,7 +260,7 @@ const HealthcareWorkerDashboard = () => {
               )}
 
               {activeTab === "upcoming" && (
-                <div className="bg-white rounded-lg shadow-sm">
+                <div className="bg-white rounded-lg ">
                   <div className="p-6 border-b border-neutral-200">
                     <h3 className="text-lg font-semibold">Upcoming Events</h3>
                     <p className="text-sm text-gray-500">
@@ -316,7 +316,7 @@ const HealthcareWorkerDashboard = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="bg-white rounded-lg shadow-sm">
+            <div className="bg-white rounded-lg ">
               <div className="p-6 border-b border-neutral-200 flex items-center justify-between">
                 <div>
                   <h3 className="text-lg font-semibold">Contact Information</h3>

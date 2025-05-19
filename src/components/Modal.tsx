@@ -95,7 +95,7 @@ export const Modal = ({
                         type={button.type || "button"}
                         onClick={button.onClick}
                         disabled={button.disabled}
-                        className={`inline-flex justify-center cursor-pointer rounded-lg px-4 py-2 text-sm font-medium shadow-sm ${button.className}`}
+                        className={`inline-flex justify-center cursor-pointer rounded-lg px-4 py-2 text-sm font-medium ${button.className}`}
                       >
                         {button.label} {button.icon}
                       </button>

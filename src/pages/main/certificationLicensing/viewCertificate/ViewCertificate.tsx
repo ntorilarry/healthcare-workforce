@@ -85,7 +85,7 @@ export  const ViewCertificate = () => {
             {/* Certificate Details and Staff Info */}
             <div className="grid gap-6 md:grid-cols-3">
               {/* Certificate Details Card */}
-              <div className="md:col-span-2 bg-white rounded-lg shadow-sm border border-gray-200">
+              <div className="md:col-span-2 bg-white rounded-lg  border border-gray-200">
                 <div className="px-6 py-4 border-b border-gray-200">
                   <h2 className="text-lg font-semibold">Certificate Details</h2>
                   <p className="text-sm text-gray-500">
@@ -143,7 +143,7 @@ export  const ViewCertificate = () => {
               </div>
 
               {/* Staff Information Card */}
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+              <div className="bg-white rounded-lg  border border-gray-200">
                 <div className="px-6 py-4 border-b border-gray-200">
                   <h2 className="text-lg font-semibold">Staff Information</h2>
                   <p className="text-sm text-gray-500">
@@ -192,7 +192,7 @@ export  const ViewCertificate = () => {
                   <div className="mt-4">
                     <a
                       href="/staff/hw-2023-0042"
-                      className="w-full flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                      className="w-full flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-md  text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
                     >
                       <FiUser className="h-4 w-4" />
                       View Full Profile
@@ -203,7 +203,7 @@ export  const ViewCertificate = () => {
             </div>
 
             {/* Certificate Document */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white rounded-lg  border border-gray-200">
               <div className="px-6 py-4 border-b border-gray-200">
                 <h2 className="text-lg font-semibold">Certificate Document</h2>
                 <p className="text-sm text-gray-500">
@@ -275,7 +275,7 @@ export  const ViewCertificate = () => {
               <TabPanels className="mt-6">
                 {/* History Tab */}
                 <TabPanel>
-                  <div className="bg-white rounded-lg shadow-sm border border-neutral-200">
+                  <div className="bg-white rounded-lg  border border-neutral-200">
                     <div className="px-6 py-4 border-b border-gray-200">
                       <h2 className="text-lg font-semibold">
                         Certificate History
@@ -355,7 +355,7 @@ export  const ViewCertificate = () => {
 
                 {/* Related Certifications Tab */}
                 <TabPanel>
-                  <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+                  <div className="bg-white rounded-lg  border border-gray-200">
                     <div className="px-6 py-4 border-b border-gray-200">
                       <h2 className="text-lg font-semibold">
                         Related Certifications
@@ -451,7 +451,7 @@ export  const ViewCertificate = () => {
             </TabGroup>
 
             {/* Action Panel */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white rounded-lg  border border-gray-200">
               <div className="px-6 py-4 border-b border-gray-200">
                 <h2 className="text-lg font-semibold">Certificate Actions</h2>
               </div>

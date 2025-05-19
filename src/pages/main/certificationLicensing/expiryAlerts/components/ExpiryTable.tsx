@@ -70,7 +70,7 @@ const ExpiryTable = () => {
       accessor: "id",
       render: () => (
         <div className="flex justify-end gap-2">
-          <button className="inline-flex h-8 items-center justify-center rounded-md border border-neutral-200 bg-white px-3 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950">
+          <button className="inline-flex h-8 items-center justify-center rounded-md border border-neutral-200 bg-white px-3 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950">
             Remind
           </button>
           <button className="inline-flex h-8 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white shadow transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950">
@@ -81,27 +81,11 @@ const ExpiryTable = () => {
     },
   ];
 
-  //   const actionButton = (
-  //     <div className="flex flex-wrap gap-2">
-  //       <button className="flex items-center gap-2 text-sm border border-black/30 hover:bg-neutral-800 hover:text-white text-black rounded-md px-3 py-1.5">
-  //         <BiExport className="h-3.5 w-3.5" />
-  //         Export
-  //       </button>
-  //       <Link
-  //         to="/certification-&-licensing/add-certificates"
-  //         className="flex items-center gap-2 text-sm bg-neutral-800 text-white rounded-md px-3 py-1.5 hover:bg-neutral-900"
-  //       >
-  //         <FiPlus className="h-3.5 w-3.5" />
-  //         Add Certifications
-  //       </Link>
-  //     </div>
-  //   );
-
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages] = useState(1);
   return (
     <div>
-      <div className="space-y-4 p-6">
+      <div className="space-y-4 ">
         {/* Tabs */}
         <TabGroup
           selectedIndex={tabs.findIndex((tab) => tab.id === selectedTab)}

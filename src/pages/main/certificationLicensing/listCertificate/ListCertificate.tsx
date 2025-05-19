@@ -141,7 +141,7 @@ const ListCertificate = () => {
   return (
     <div>
       <div className="grid gap-4 md:grid-cols-3 py-6">
-        <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm">
+        <div className="rounded-lg border border-neutral-200 bg-white p-6">
           <div className="flex flex-row items-center justify-between pb-2">
             <h3 className="text-sm font-medium">Valid Certifications</h3>
             <FaAward className="h-4 w-4 text-green-500" />
@@ -152,7 +152,7 @@ const ListCertificate = () => {
           </div>
         </div>
 
-        <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm">
+        <div className="rounded-lg border border-neutral-200 bg-white p-6">
           <div className="flex flex-row items-center justify-between pb-2">
             <h3 className="text-sm font-medium">Expiring in 90 Days</h3>
             <FaAward className="h-4 w-4 text-amber-500" />
@@ -163,7 +163,7 @@ const ListCertificate = () => {
           </div>
         </div>
 
-        <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm">
+        <div className="rounded-lg border border-neutral-200 bg-white p-6">
           <div className="flex flex-row items-center justify-between pb-2">
             <h3 className="text-sm font-medium">Expired</h3>
             <FaAward className="h-4 w-4 text-red-500" />

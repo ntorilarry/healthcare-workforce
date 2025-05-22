@@ -32,7 +32,7 @@ export const MFA = () => {
           <p className="text-gray-500">Verify your identity to continue</p>
         </div>
 
-        <div className="rounded-lg bg-white ">
+        <div className="rounded-lg bg-white border border-neutral-200">
           <div className="p-6">
             <div className="mb-6">
               <h2 className="text-xl font-semibold text-gray-900">

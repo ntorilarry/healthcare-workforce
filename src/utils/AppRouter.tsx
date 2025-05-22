@@ -14,7 +14,7 @@ import { AddCertificate } from "../pages/main/certificationLicensing/addCertific
 import { ExpiryAlerts } from "../pages/main/certificationLicensing/expiryAlerts/ExpiryAlerts";
 import { ViewCertificate } from "../pages/main/certificationLicensing/viewCertificate/ViewCertificate";
 import Transfers from "../pages/main/employmentLifecycleManagement/transfers/Transfers";
-import Promotions from "../pages/main/employmentLifecycleManagement/promtions/Promotions";
+import { Promotions } from "../pages/main/employmentLifecycleManagement/promtions/Promotions";
 
 const AppRouter = () => {
   return (

@@ -19,18 +19,24 @@ import {
   FiAlertCircle,
 } from "react-icons/fi";
 import { FaHistory, FaRegBuilding } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
-export  const ViewCertificate = () => {
+export const ViewCertificate = () => {
   const [selectedTab, setSelectedTab] = useState(0);
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
 
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border-b border-neutral-200 bg-white px-4 sm:gap-8 lg:px-6">
-        <a href="/certifications" className="flex items-center gap-2">
+        <button onClick={handleGoBack} className="flex items-center gap-2 cursor-pointer">
           <FiChevronLeft className="h-4 w-4" />
           <span>Go back</span>
-        </a>
+        </button>
         <div className="flex-1">
           <h1 className="text-lg font-semibold">View Certification</h1>
         </div>
@@ -485,4 +491,4 @@ export  const ViewCertificate = () => {
       </main>
     </div>
   );
-}
+};

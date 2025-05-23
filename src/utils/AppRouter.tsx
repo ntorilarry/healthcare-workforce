@@ -13,8 +13,8 @@ import ListCertificate from "../pages/main/certificationLicensing/listCertificat
 import { AddCertificate } from "../pages/main/certificationLicensing/addCertificates/AddCertificate";
 import { ExpiryAlerts } from "../pages/main/certificationLicensing/expiryAlerts/ExpiryAlerts";
 import { ViewCertificate } from "../pages/main/certificationLicensing/viewCertificate/ViewCertificate";
-import Transfers from "../pages/main/employmentLifecycleManagement/transfers/Transfers";
 import { Promotions } from "../pages/main/employmentLifecycleManagement/promtions/Promotions";
+import { Transfers } from "../pages/main/employmentLifecycleManagement/transfers/Transfers";
 
 const AppRouter = () => {
   return (

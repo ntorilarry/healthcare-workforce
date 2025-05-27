@@ -27,7 +27,7 @@ interface PaginationProps {
   onPageChange: (page: number) => void;
 }
 
-interface DataTableProps<T> {
+interface DataTableProps<T extends object> {
   data: T[];
   columns: DataTableColumn<T>[];
   title?: string;
@@ -40,7 +40,7 @@ interface DataTableProps<T> {
   actions?: ActionItem[] | ((data: T) => ActionItem[]);
 }
 
-const DataTable = <T extends { id: string }>({
+const DataTable = <T extends object>({
   data,
   columns,
   title,
@@ -132,66 +132,68 @@ const DataTable = <T extends { id: string }>({
 
       <div className={`${title ? "pt-0" : ""} p-6`}>
         <div className="border border-neutral-200 bg-white rounded-md overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  {visibleColumns.map((column) => (
-                    <th
-                      key={column.header}
-                      scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider"
-                    >
-                      {column.header}
-                    </th>
-                  ))}
-                  {actions && (
-                    <th scope="col" className="relative px-6 py-3"></th>
-                  )}
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {isLoading ? (
+          <div className="inline-block min-w-full align-middle">
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
                   <tr>
-                    <td
-                      colSpan={visibleColumns.length + (actions ? 1 : 0)}
-                      className="px-6 py-4 text-center"
-                    >
-                      Loading...
-                    </td>
+                    {visibleColumns.map((column) => (
+                      <th
+                        key={column.header}
+                        scope="col"
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider"
+                      >
+                        {column.header}
+                      </th>
+                    ))}
+                    {actions && (
+                      <th scope="col" className="relative px-6 py-3"></th>
+                    )}
                   </tr>
-                ) : data.length === 0 ? (
-                  <tr>
-                    <td
-                      colSpan={visibleColumns.length + (actions ? 1 : 0)}
-                      className="px-6 py-4 text-center"
-                    >
-                      No data available
-                    </td>
-                  </tr>
-                ) : (
-                  data.map((item) => (
-                    <tr key={item.id}>
-                      {visibleColumns.map((column) => (
-                        <td
-                          key={`${item.id}-${column.header}`}
-                          className="px-6 py-4 whitespace-nowrap text-sm text-gray-800"
-                        >
-                          {column.render
-                            ? column.render(item)
-                            : (item[column.accessor] as ReactNode)}
-                        </td>
-                      ))}
-                      {actions && (
-                        <td className="px-4 py-3 text-right">
-                          {renderActionsMenu(item)}
-                        </td>
-                      )}
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  {isLoading ? (
+                    <tr>
+                      <td
+                        colSpan={visibleColumns.length + (actions ? 1 : 0)}
+                        className="px-6 py-4 text-center"
+                      >
+                        Loading...
+                      </td>
                     </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
+                  ) : data.length === 0 ? (
+                    <tr>
+                      <td
+                        colSpan={visibleColumns.length + (actions ? 1 : 0)}
+                        className="px-6 py-4 text-center"
+                      >
+                        No data available
+                      </td>
+                    </tr>
+                  ) : (
+                    data.map((item, index) => (
+                      <tr key={index}>
+                        {visibleColumns.map((column) => (
+                          <td
+                            key={`${index}-${column.header}`}
+                            className="px-6 py-4 whitespace-nowrap text-sm text-gray-800"
+                          >
+                            {column.render
+                              ? column.render(item)
+                              : (item[column.accessor] as ReactNode)}
+                          </td>
+                        ))}
+                        {actions && (
+                          <td className="px-4 py-3 text-right">
+                            {renderActionsMenu(item)}
+                          </td>
+                        )}
+                      </tr>
+                    ))
+                  )}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         {pagination && (

@@ -15,6 +15,7 @@ import { ExpiryAlerts } from "../pages/main/certificationLicensing/expiryAlerts/
 import { ViewCertificate } from "../pages/main/certificationLicensing/viewCertificate/ViewCertificate";
 import { Promotions } from "../pages/main/employmentLifecycleManagement/promtions/Promotions";
 import { Transfers } from "../pages/main/employmentLifecycleManagement/transfers/Transfers";
+import DisciplinaryActions from "../pages/main/employmentLifecycleManagement/disciplinaryActions/DisciplinaryActions";
 
 const AppRouter = () => {
   return (
@@ -54,6 +55,7 @@ const AppRouter = () => {
           <Route index element={<Navigate replace to="promotions" />} />
           <Route path="promotions" element={<Promotions />} />
           <Route path="transfers" element={<Transfers />} />
+          <Route path="disciplinary" element={<DisciplinaryActions />} />
         </Route>
       </Route>
 

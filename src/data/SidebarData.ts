@@ -10,6 +10,7 @@ import { TbLicense } from "react-icons/tb";
 import { BiTransfer } from "react-icons/bi";
 import { GiStarCycle } from "react-icons/gi";
 import { CiStar } from "react-icons/ci";
+import { VscGithubAction } from "react-icons/vsc";
 
 export const navigation = [
   {
@@ -72,6 +73,11 @@ export const navigation = [
         name: "Transfers",
         href: "/employment-lifecycle/Transfers",
         icon: BiTransfer,
+      },
+      {
+        name: "Disciplinary Actions",
+        href: "/employment-lifecycle/disciplinary",
+        icon: VscGithubAction,
       },
     ],
   },

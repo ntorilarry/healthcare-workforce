@@ -6,11 +6,12 @@ import {
 import { RiDashboardHorizontalLine, RiPassExpiredLine } from "react-icons/ri";
 import { RxDashboard } from "react-icons/rx";
 import { GrCertificate } from "react-icons/gr";
-import { TbLicense } from "react-icons/tb";
+import { TbLayoutDashboard, TbLicense } from "react-icons/tb";
 import { BiTransfer } from "react-icons/bi";
 import { GiStarCycle } from "react-icons/gi";
 import { CiStar } from "react-icons/ci";
-import { VscGithubAction } from "react-icons/vsc";
+import { VscGithubAction, VscReport } from "react-icons/vsc";
+import { SiGoogleanalytics } from "react-icons/si";
 
 export const navigation = [
   {
@@ -78,6 +79,23 @@ export const navigation = [
         name: "Disciplinary Actions",
         href: "/employment-lifecycle/disciplinary",
         icon: VscGithubAction,
+      },
+    ],
+  },
+  {
+    name: "Analytics & Reports",
+    href: "/analytics/dashboard",
+    icon: SiGoogleanalytics,
+    subItems: [
+      {
+        name: "Dashboard",
+        href: "/analytics/dashboard",
+        icon: TbLayoutDashboard,
+      },
+      {
+        name: "Report Builder",
+        href: "/analytics/report-builder",
+        icon: VscReport,
       },
     ],
   },

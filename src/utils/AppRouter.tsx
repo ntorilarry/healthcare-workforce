@@ -16,6 +16,8 @@ import { ViewCertificate } from "../pages/main/certificationLicensing/viewCertif
 import { Promotions } from "../pages/main/employmentLifecycleManagement/promtions/Promotions";
 import { Transfers } from "../pages/main/employmentLifecycleManagement/transfers/Transfers";
 import DisciplinaryActions from "../pages/main/employmentLifecycleManagement/disciplinaryActions/DisciplinaryActions";
+import AnalyticsDashboard from "../pages/main/analyticsReports/dashboard/AnalyticsDashboard";
+import { ReportBuilder } from "../pages/main/analyticsReports/reportBuilder/ReportBuilder";
 
 const AppRouter = () => {
   return (
@@ -56,6 +58,12 @@ const AppRouter = () => {
           <Route path="promotions" element={<Promotions />} />
           <Route path="transfers" element={<Transfers />} />
           <Route path="disciplinary" element={<DisciplinaryActions />} />
+        </Route>
+
+        <Route path="analytics">
+          <Route index element={<Navigate replace to="dashboard" />} />
+          <Route path="dashboard" element={<AnalyticsDashboard />} />
+          <Route path="report-builder" element={<ReportBuilder />} />
         </Route>
       </Route>
 

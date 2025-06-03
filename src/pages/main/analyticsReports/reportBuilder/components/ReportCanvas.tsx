@@ -97,7 +97,7 @@ const ReportCanvas = () => {
                 </div>
               </div>
 
-              <div className="rounded-lg border bg-white p-4">
+              <div className="rounded-lg border border-neutral-200 bg-white p-4">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-semibold">Staff Details</h3>
                   <div className="flex items-center gap-2">

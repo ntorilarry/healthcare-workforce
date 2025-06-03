@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 
 const AgeDistributionChart = () => {
@@ -10,9 +10,8 @@ const AgeDistributionChart = () => {
     // Initialize the chart
     const chart = echarts.init(chartRef.current);
 
-    // Chart options
+    // Chart optionsS
     const options = {
-  
       tooltip: {
         trigger: "axis",
         axisPointer: {
@@ -87,9 +86,8 @@ const AgeDistributionChart = () => {
         <h3 className="text-lg font-semibold">Age Distribution</h3>
         <p className="text-sm text-gray-500">Workforce age demographics</p>
       </div>
-     
+
       <div ref={chartRef} style={{ width: "100%", height: "400px" }} />
-    
     </div>
   );
 };
